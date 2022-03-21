@@ -11,6 +11,9 @@ file_to_save=os.path.join("analysis","election_analysis.txt")
 #1. Initialize a total vote count
 total_votes = 0
 
+#Candidate Options
+candidate_options=[]
+
 # Open the election results and read the file.election_data = open(file_to_load, 'r')
 with open(file_to_load)as election_data:
 
@@ -30,8 +33,18 @@ with open(file_to_load)as election_data:
         #2. Add to the total vote count
         total_votes += 1
 
+        # Print the candiate name from each row
+        candidate_name = row [2]
+
+        # If the candidate does not match any existing candidate...
+        if candidate_name not in candidate_options:
+            # Add the candidate name to the candidate list
+            # Add it to the list of candidates
+            candidate_options.append(candidate_name)
+
 #3. Print the total votes
-print(total_votes)
+#print(total_votes)
+print(candidate_options)
 
 # Create a filename variable to a direct or indirect path to the file.
 # assign a variable to save the file to path
