@@ -16,6 +16,11 @@ candidate_options=[]
 # Declare the empty dictionary
 candidate_votes={}
 
+# Winning Candidate and Winning Count Tracker
+winning_candidate = ""
+winning_count = 0
+winning_percentage = 0 
+
 # Open the election results and read the file.election_data = open(file_to_load, 'r')
 with open(file_to_load)as election_data:
 
@@ -58,10 +63,32 @@ with open(file_to_load)as election_data:
         # 4. Print the candidate name and percentage of votes
         print(f"{candidate_name}: received {vote_percentage} % of the vote")
 
+        # To do: print out each candidate's name, vote count, and percentage of
+        # votes to the terminal
+        print(f"{candidate_name}: {vote_percentage:.1f}%({votes:,})\n")
+
+        # Determine winning vote count and candidate
+        # Determine if the votes greater than the winning count
+        if (votes > winning_count) and (vote_percentage> winning_percentage):
+            # if true then set winning_count=votes and winning_percentage=
+            # vote_percentage
+            winning_count = votes
+            winning_percentage = vote_percentage
+            # and set the winning_candidate equal to the candidate's name
+            winning_candidate = candidate_name
+
+    winning_candidate_summary = (
+        f"-------------------------\n"
+        f"Winner: {winning_candidate}\n"
+        f"Winning Vote Count: {winning_count:,}\n"
+        f"Winning Percentage: {winning_percentage:.1f}%\n"
+        f"-------------------------\n")
+
 #3. Print the total votes
 #print(total_votes)
 #print(candidate_options)
-print (candidate_votes)
+#print (candidate_votes)
+print (winning_candidate_summary)
 
 # Create a filename variable to a direct or indirect path to the file.
 # assign a variable to save the file to path
