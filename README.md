@@ -12,7 +12,8 @@ Data Source: election_results.csv
 Software: Python 3.7, Visual Studio Code 1.65
 
 ### Analysis of election results
-![image](https://user-images.githubusercontent.com/98724851/159821057-83131d6a-7a27-49be-8718-cd726e3153ef.png
+![image](https://user-images.githubusercontent.com/98724851/159823046-316c5cc8-d5e7-4c54-925a-b6c6bc4fbd54.png)
+
 
 ## Results
 - 369,711 total votes in these congressional elections
