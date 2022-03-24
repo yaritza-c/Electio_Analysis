@@ -8,11 +8,11 @@ Audit local congressional election for the Colorado Board of Election
 Calculate and determine the winning candidate 
 
 ### Resources
-Data Source:
+Data Source: election_results.csv
 Software: Python 3.7, Visual Studio Code 1.65
 
 ### Analysis of election results
-
+![image](https://user-images.githubusercontent.com/98724851/159821057-83131d6a-7a27-49be-8718-cd726e3153ef.png
 
 ## Results
 - 369,711 total votes in these congressional elections
@@ -32,4 +32,10 @@ Software: Python 3.7, Visual Studio Code 1.65
 - Diana DeGette won the election with total votes of 273,892 at a 73.8%
 
 ## Summary
-In order to determine the winner of the election, I calculated the total votes and percentage votes for each candidate in each county. With three candidates (Carles Casper Stockham, Diana DeGette, and Raymon Anthony Doane) and three diffrent counties (Jefferson, Denver, and Arapahoe). This data can be modified for any future candidates. The coding on this analysis will need to be modified by changing the candidates' names and counties.
+In order to determine the winner of the election, I calculated the total votes and percentage votes for each candidate in each county. With three candidates (Carles Casper Stockham, Diana DeGette, and Raymon Anthony Doane) and three diffrent counties (Jefferson, Denver, and Arapahoe). This data can be modified for any future candidates. The coding on this analysis will need to be modified by changing the candidates' names, counties, and new data information.
+
+![image](https://user-images.githubusercontent.com/98724851/159822716-22dc0896-fb4e-44a6-958e-7bc5767b0f92.png)
+![image](https://user-images.githubusercontent.com/98724851/159822833-15904dde-6d1d-4cd0-b99d-2cf1f4381168.png)
+
+
+
